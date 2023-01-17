@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "6 x 8",
+    "price_multiplier": 1,
+    "set_id": 1
+  },
+  {
+    "id": 2,
+    "name": "8 x 10",
+    "price_multiplier": 1.2,
+    "set_id": 1
+  },
+  {
+    "id": 3,
+    "name": "10 x 12",
+    "price_multiplier": 1.4,
+    "set_id": 1
+  },
+  {
+    "id": 4,
+    "name": "5 pcs",
+    "price_multiplier": 1,
+    "set_id": 2
+  },
+  {
+    "id": 5,
+    "name": "10 pcs",
+    "price_multiplier": 1.8,
+    "set_id": 2
+  },
+  {
+    "id": 6,
+    "name": "20 pcs",
+    "price_multiplier": 2.8,
+    "set_id": 2
+  },
+  {
+    "id": 7,
+    "name": "2 pcs",
+    "price_multiplier": 1,
+    "set_id": 3
+  },
+  {
+    "id": 8,
+    "name": "4 pcs",
+    "price_multiplier": 1.8,
+    "set_id": 3
+  },
+  {
+    "id": 9,
+    "name": "6 pcs",
+    "price_multiplier": 2.6,
+    "set_id": 3
+  },
+  {
+    "id": 10,
+    "name": "6 pcs",
+    "price_multiplier": 1,
+    "set_id": 4
+  },
+  {
+    "id": 11,
+    "name": "12 pcs",
+    "price_multiplier": 1.8,
+    "set_id": 4
+  },
+  {
+    "id": 12,
+    "name": "20 pcs",
+    "price_multiplier": 2.8,
+    "set_id": 4
+  }
+]

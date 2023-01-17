@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "Carrot",
+    "description": "Soft and moisty goodness packed with carrots, walnuts, and cream cheese.",
+    "price": 600,
+    "img_name": "carrot.png",
+    "variant_set_id": 1
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "Chocolate Fudge",
+    "description": "Decadent fudge-filled chocolate topped with caramel frosting.",
+    "price": 600,
+    "img_name": "chocofudge.png",
+    "variant_set_id": 1
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "name": "Marble",
+    "description": "Layers of vanilla and chocolate mixed in buttery bread.",
+    "price": 600,
+    "img_name": "marble.png",
+    "variant_set_id": 1
+  },
+  {
+    "id": 4,
+    "category_id": 1,
+    "name": "Red Velvet",
+    "description": "Our own take on the traditional velvet flavor—vanilla drenched in butter with a hint of cocoa flavor.",
+    "price": 700,
+    "img_name": "redvelvet.png",
+    "variant_set_id": 1
+  },
+  {
+    "id": 5,
+    "category_id": 1,
+    "name": "Tiramisu",
+    "description": "A fusion of espresso-dipped ladyfingers and a creamy, lightly sweetened mascarpone cream, making a bittersweet result of flavors.",
+    "price": 700,
+    "img_name": "tiramisu.png",
+    "variant_set_id": 1
+  },
+  {
+    "id": 6,
+    "category_id": 1,
+    "name": "Ube",
+    "description": "Moist, nutty, delectable ube goodness you all know and love.",
+    "price": 700,
+    "img_name": "ube.png",
+    "variant_set_id": 1
+  },
+  {
+    "id": 7,
+    "category_id": 2,
+    "name": "Chocolate Chip",
+    "description": "Our famous, traditional chocolate chip cookie.",
+    "price": 60,
+    "img_name": "chocochip.png",
+    "variant_set_id": 2
+  },
+  {
+    "id": 8,
+    "category_id": 2,
+    "name": "Chocolate Crinkles",
+    "description": "Brownie-like chocolate cookies coated in confectioners' sugar.",
+    "price": 50,
+    "img_name": "chococringles.png",
+    "variant_set_id": 2
+  },
+  {
+    "id": 9,
+    "category_id": 2,
+    "name": "Gingerbread",
+    "description": "Molasses and brown sugar-sweetened holiday goodness that are crispy on the edges yet soft in the center.",
+    "price": 80,
+    "img_name": "gingerbread.png",
+    "variant_set_id": 2
+  },
+  {
+    "id": 10,
+    "category_id": 3,
+    "name": "Egg Tart",
+    "description": "Bright savory egg richness with a scorched caramelized exterior.",
+    "price": 60,
+    "img_name": "eggtart.png",
+    "variant_set_id": 3
+  },
+  {
+    "id": 11,
+    "category_id": 3,
+    "name": "Macarons",
+    "description": "Evocatively delicate nutty sandwich cookies with a crisp exterior.",
+    "price": 50,
+    "img_name": "macaron.png",
+    "variant_set_id": 2
+  },
+  {
+    "id": 12,
+    "category_id": 3,
+    "name": "Soft Pretzel",
+    "description": "Traditional pretzels with a deeply browned exterior and a chewy texture.",
+    "price": 50,
+    "img_name": "pretzel.png",
+    "variant_set_id": 4
+  }
+]
