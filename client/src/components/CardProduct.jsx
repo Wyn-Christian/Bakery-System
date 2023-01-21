@@ -78,7 +78,7 @@ export default function CardProduct({
             }}
             component="img"
             image={`http://localhost:${ports.PORT}/assets/product-img/${category_id.name}/${img_name}`}
-            alt="green iguana"
+            alt={img_name}
           />
         ) : (
           <Skeleton
