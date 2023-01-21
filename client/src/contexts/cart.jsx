@@ -9,8 +9,10 @@ import { useNavigate } from "react-router";
 
 import axios from "axios";
 import { useSnackbar } from "notistack";
+import { usePorts } from "../contexts/ports";
 
 export const useCartSource = () => {
+  const ports = usePorts();
   const { enqueueSnackbar } = useSnackbar();
   const navigate = useNavigate();
 
@@ -49,7 +51,9 @@ export const useCartSource = () => {
 
   const initiateCartList = useCallback((user_id) => {
     axios
-      .get(`http://localhost:5001/catalog/cart-items/user/${user_id}`)
+      .get(
+        `http://localhost:${ports.SERVER_PORT}/catalog/cart-items/user/${user_id}`
+      )
       .then((result) => {
         setCartList(result.data.cart_items);
       });
@@ -66,11 +70,14 @@ export const useCartSource = () => {
       if (!cart) {
         enqueueSnackbar("Added to cart!", { variant: "success" });
         axios
-          .post("http://localhost:5001/catalog/cart-items/create", {
-            user_id,
-            product_id,
-            variant_id,
-          })
+          .post(
+            `http://localhost:${ports.SERVER_PORT}/catalog/cart-items/create`,
+            {
+              user_id,
+              product_id,
+              variant_id,
+            }
+          )
           .then((result) => {
             setCartList((cartList) => {
               return [...cartList, { ...result.data.new_cart_item }];
@@ -89,7 +96,9 @@ export const useCartSource = () => {
   const removeToCart = useCallback(
     (id) => {
       axios
-        .post(`http://localhost:5001/catalog/cart-items/${id}/delete`)
+        .post(
+          `http://localhost:${ports.SERVER_PORT}/catalog/cart-items/${id}/delete`
+        )
         .then((result) => {
           if (result.data.status === "Success") {
             enqueueSnackbar(
@@ -109,7 +118,7 @@ export const useCartSource = () => {
   const checkOutItems = (user_id, data) => {
     axios
       .post(
-        `http://localhost:5001/catalog/checkout/${user_id}/create`,
+        `http://localhost:${ports.SERVER_PORT}/catalog/checkout/${user_id}/create`,
         data
       )
       .then((result) => {
@@ -126,7 +135,7 @@ export const useCartSource = () => {
   const updateCartQuantity = (id, quantity) => {
     axios
       .post(
-        `http://localhost:5001/catalog/cart-items/${id}/update-quantity`,
+        `http://localhost:${ports.SERVER_PORT}/catalog/cart-items/${id}/update-quantity`,
         { quantity }
       )
       .then((result) => {

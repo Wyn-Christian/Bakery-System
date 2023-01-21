@@ -25,14 +25,25 @@ exports.detail = (req, res, next) => {
   });
 };
 
-exports.login = (req, res, next) => {
-  User.findOne({ email: req.body.email, password: req.body.password }).exec(
-    (err, user) => {
-      if (err) return next(err);
-
-      res.json({ user });
+exports.check_user = (req, res, next) => {
+  User.findOne({ email: req.body.email }).exec((err, user) => {
+    if (err) {
+      return next(err);
     }
-  );
+
+    res.json({ user });
+  });
+};
+
+exports.login = (req, res, next) => {
+  User.findOne({
+    email: req.body.email,
+    password: req.body.password,
+  }).exec((err, user) => {
+    if (err) return next(err);
+
+    res.json({ user });
+  });
 };
 
 exports.create = (req, res, next) => {

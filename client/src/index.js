@@ -11,6 +11,7 @@ import { UserProvider } from "./contexts/user";
 import { DataProvider } from "./contexts/data";
 import { SnackbarProvider } from "notistack";
 import { ApiProvider } from "./contexts/api";
+import { PortsProvider } from "./contexts/ports";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,15 +25,17 @@ root.render(
           horizontal: "center",
         }}
       >
-        <DataProvider>
-          <ApiProvider>
-            <CartProvider>
-              <UserProvider>
-                <App />
-              </UserProvider>
-            </CartProvider>
-          </ApiProvider>
-        </DataProvider>
+        <PortsProvider>
+          <DataProvider>
+            <ApiProvider>
+              <CartProvider>
+                <UserProvider>
+                  <App />
+                </UserProvider>
+              </CartProvider>
+            </ApiProvider>
+          </DataProvider>
+        </PortsProvider>
       </SnackbarProvider>
     </BrowserRouter>
   </React.StrictMode>

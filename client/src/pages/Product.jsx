@@ -20,9 +20,11 @@ import { useSnackbar } from "notistack";
 import { useCart } from "../contexts/cart";
 import { useUser } from "../contexts/user";
 import { useApi } from "../contexts/api";
+import { usePorts } from "../contexts/ports";
 
 function Product() {
   const { apiStocks } = useApi();
+  const ports = usePorts();
 
   const { id } = useParams();
   const { enqueueSnackbar } = useSnackbar();
@@ -49,7 +51,7 @@ function Product() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5001/catalog/products/${id}`)
+      .get(`http://localhost:${ports.SERVER_PORT}/catalog/products/${id}`)
       .then((result) => setProduct(result.data.product));
   }, [id]);
   return (
@@ -89,7 +91,7 @@ function Product() {
           >
             {product ? (
               <img
-                src={`http://localhost:3000/assets/product-img/${product.category_id.name}/${product.img_name}`}
+                src={`http://localhost:${ports.PORT}/assets/product-img/${product.category_id.name}/${product.img_name}`}
                 alt="product"
                 style={{
                   width: "80%",

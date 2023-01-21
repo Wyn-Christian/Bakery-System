@@ -19,6 +19,7 @@ import { useSnackbar } from "notistack";
 import { useUser } from "../contexts/user";
 import { useCart } from "../contexts/cart";
 import { useApi } from "../contexts/api";
+import { usePorts } from "../contexts/ports";
 
 export default function CardProduct({
   id,
@@ -29,6 +30,7 @@ export default function CardProduct({
   variant_set_id,
 }) {
   const { apiStocks } = useApi();
+  const ports = usePorts();
 
   const theme = useTheme();
   const navigate = useNavigate();
@@ -75,7 +77,7 @@ export default function CardProduct({
               padding: "20px 20px 20px 20px",
             }}
             component="img"
-            image={`http://localhost:3000/assets/product-img/${category_id.name}/${img_name}`}
+            image={`http://localhost:${ports.PORT}/assets/product-img/${category_id.name}/${img_name}`}
             alt="green iguana"
           />
         ) : (

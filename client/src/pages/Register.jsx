@@ -1,9 +1,21 @@
-import { Box, Card, Paper, TextField, Button, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  Paper,
+  TextField,
+  Button,
+  Typography,
+} from "@mui/material";
 import { useFormik } from "formik";
+import { useSnackbar } from "notistack";
+
+import { useUser } from "../contexts/user";
 
 import SendIcon from "@mui/icons-material/Send";
 
 function Register() {
+  const { registerUser, checkUserExist } = useUser();
+  const { enqueueSnackbar } = useSnackbar();
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -11,8 +23,16 @@ function Register() {
       password: "",
       repassword: "",
     },
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      if (values.password !== values.repassword) {
+        enqueueSnackbar("Password doesn't match!", { variant: "error" });
+      } else if (await checkUserExist(values.email)) {
+        enqueueSnackbar("User already exist!", {
+          variant: "error",
+        });
+      } else {
+        registerUser(values);
+      }
     },
   });
   return (
@@ -43,6 +63,7 @@ function Register() {
           onSubmit={formik.handleSubmit}
         >
           <TextField
+            required
             variant="standard"
             id="username"
             label="username"
@@ -50,6 +71,7 @@ function Register() {
             value={formik.values.username}
           />
           <TextField
+            required
             variant="standard"
             id="email"
             label="email"
@@ -57,6 +79,7 @@ function Register() {
             value={formik.values.email}
           />
           <TextField
+            required
             variant="standard"
             id="password"
             type="password"
@@ -65,6 +88,7 @@ function Register() {
             value={formik.values.password}
           />
           <TextField
+            required
             variant="standard"
             id="repassword"
             type="password"

@@ -9,16 +9,18 @@ import {
 
 import axios from "axios";
 import { useSnackbar } from "notistack";
+import { usePorts } from "../contexts/ports";
 
 export const useApiSource = () => {
-  const [apiKey, setApiKey] = useState("63c696b530257e3cc3447a2c");
+  const ports = usePorts();
+  const [apiKey, setApiKey] = useState(ports.API_KEY);
 
   const [apiStocks, setApiStocks] = useState([]);
 
   // get stocks
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/${apiKey}/stocks`)
+      .get(`http://localhost:${ports.API_PORT}/api/${apiKey}/stocks`)
       .then((result) => setApiStocks(result.data));
   }, [apiKey]);
 
@@ -33,10 +35,13 @@ export const useApiSource = () => {
     console.log({ apiStocks, updated_stocks });
     setApiStocks(updated_stocks);
     axios
-      .post(`http://localhost:5000/api/${apiKey}/add-checkout-items`, {
-        checkout_items,
-        updated_stocks,
-      })
+      .post(
+        `http://localhost:${ports.API_PORT}/api/${apiKey}/add-checkout-items`,
+        {
+          checkout_items,
+          updated_stocks,
+        }
+      )
       .then((result) => console.log(result.data));
   };
   return { apiKey, apiStocks, apiCheckoutItems };

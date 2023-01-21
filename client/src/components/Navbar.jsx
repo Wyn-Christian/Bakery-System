@@ -25,6 +25,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 // useContexts
 import { useCart } from "../contexts/cart";
 import { useUser } from "../contexts/user";
+import { usePorts } from "../contexts/ports";
 import { Badge } from "@mui/material";
 
 const Items = ({ title, to }) => (
@@ -70,6 +71,7 @@ function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { cartList, setCartOpen } = useCart();
   const { user } = useUser();
+  const ports = usePorts();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -80,7 +82,7 @@ function NavBar() {
       <Box>
         <img
           style={{ height: "48px", margin: "20px 0" }}
-          src="http://localhost:3000/http://localhost:3000/assets/images/logo.png"
+          src={`http://localhost:${ports.PORT}/assets/images/logo.png`}
           alt="logo"
         />
       </Box>
@@ -139,7 +141,7 @@ function NavBar() {
           >
             <img
               style={{ height: "48px", position: "relative" }}
-              src="http://localhost:3000/assets/images/logo.png"
+              src={`http://localhost:${ports.PORT}/assets/images/logo.png`}
               alt="logo"
             />
           </Box>
@@ -151,7 +153,11 @@ function NavBar() {
           {user && (
             <Tooltip title="Your shopping cart" arrow>
               <IconButton
-                sx={{ color: "#fff", borderRadius: "0", padding: "20px 15px" }}
+                sx={{
+                  color: "#fff",
+                  borderRadius: "0",
+                  padding: "20px 15px",
+                }}
                 size="large"
                 onClick={() => setCartOpen(true)}
               >

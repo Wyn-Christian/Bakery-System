@@ -3,9 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "./cart";
 import axios from "axios";
 import { useSnackbar } from "notistack";
+import { usePorts } from "../contexts/ports";
+
+const PORT = "5001";
+const baseURL = "http://localhost:" + PORT;
 
 // User Custom Hooks
 export const useUserSource = () => {
+  const ports = usePorts();
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
 
@@ -14,7 +19,10 @@ export const useUserSource = () => {
 
   const loginUser = ({ email, password }) => {
     axios
-      .post("http://localhost:5001/users/login", { email, password })
+      .post(`http://localhost:${ports.SERVER_PORT}/users/login`, {
+        email,
+        password,
+      })
       .then((result) => {
         if (result.data.user === null) {
           enqueueSnackbar("User doesn't exist!", {
@@ -33,6 +41,34 @@ export const useUserSource = () => {
       });
   };
 
+  const registerUser = (data) => {
+    axios
+      .post(`http://localhost:${ports.SERVER_PORT}/users/create`, data)
+      .then((result) => {
+        if (result.data.new_user === null) {
+          enqueueSnackbar("Registration failed! please try again...", {
+            variant: "error",
+          });
+        }
+        if (result.data.new_user !== null) {
+          navigate("/login");
+          enqueueSnackbar("Register Successfully!", {
+            variant: "success",
+          });
+        }
+        return result;
+      });
+  };
+
+  const checkUserExist = async (email) => {
+    let result = await axios
+      .post(`http://localhost:${ports.SERVER_PORT}/users/check-user`, {
+        email,
+      })
+      .then((result) => result.data.user);
+    return result !== null ? true : false;
+  };
+
   const logoutUser = () => {
     setUser(undefined);
     enqueueSnackbar("Logout Successfully!", {
@@ -42,7 +78,14 @@ export const useUserSource = () => {
     navigate("/login");
   };
 
-  return { user, setUser, loginUser, logoutUser };
+  return {
+    user,
+    setUser,
+    loginUser,
+    logoutUser,
+    registerUser,
+    checkUserExist,
+  };
 };
 
 export const UserContext = createContext({});

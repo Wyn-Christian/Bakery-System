@@ -18,8 +18,11 @@ import { useCart } from "../contexts/cart";
 import { TextField, Typography } from "@mui/material";
 import { useTheme } from "@mui/material";
 import { useUser } from "../contexts/user";
+import { usePorts } from "../contexts/ports";
 
 const CartItem = ({ id, product_id, variant_id, quantity }) => {
+  const ports = usePorts();
+
   const { removeToCart, updateCartQuantity } = useCart();
   const handleQuantityChange = (event) => {
     if (event.target.value < 1) {
@@ -38,7 +41,7 @@ const CartItem = ({ id, product_id, variant_id, quantity }) => {
         <Box>
           {product_id && (
             <img
-              src={`http://localhost:3000/assets/product-img/${product_id.category_id.name}/${product_id.img_name}`}
+              src={`http://localhost:${ports.PORT}/assets/product-img/${product_id.category_id.name}/${product_id.img_name}`}
               alt="carrot"
               style={{
                 width: "50px",
