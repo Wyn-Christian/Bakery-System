@@ -14,7 +14,7 @@ exports.list = (req, res, next) => {
 
 exports.detail = (req, res, next) => {
   VariantSet.findById(req.params.id)
-    .populate("variants")
+    .populate("variants_id")
     .exec((err, variant_set) => {
       if (err) {
         return next(err);
@@ -32,7 +32,9 @@ exports.detail = (req, res, next) => {
 exports.create = (req, res, next) => {
   const new_variant_set = new VariantSet({
     variants_id:
-      typeof req.body.variants_id === "undefined" ? [] : req.body.variants_id,
+      typeof req.body.variants_id === "undefined"
+        ? []
+        : req.body.variants_id,
   });
 
   new_variant_set.save((err) => {
@@ -47,7 +49,9 @@ exports.create = (req, res, next) => {
 exports.update = (req, res, next) => {
   const variant_set = {
     variants_id:
-      typeof req.body.variants_id === "undefined" ? [] : req.body.variants_id,
+      typeof req.body.variants_id === "undefined"
+        ? []
+        : req.body.variants_id,
   };
 
   VariantSet.findByIdAndUpdate(req.params.id, variant_set, {
