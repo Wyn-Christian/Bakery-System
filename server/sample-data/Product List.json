@@ -1,0 +1,520 @@
+{
+  "list_products": [
+    {
+      "_id": "6419cc33401b1fd81ca00540",
+      "name": "Carrot",
+      "category_id": {
+        "_id": "6419c4116491264ece18828d",
+        "name": "cake",
+        "id": "6419c4116491264ece18828d"
+      },
+      "variant_set_id": {
+        "_id": "6419c6416491264ece18829a",
+        "variants_id": [
+          {
+            "_id": "6419c57d6491264ece188294",
+            "name": "6 x 8",
+            "price_multiplier": 1,
+            "id": "6419c57d6491264ece188294"
+          },
+          {
+            "_id": "6419c5cf6491264ece188296",
+            "name": "8 x 10",
+            "price_multiplier": 1.2,
+            "id": "6419c5cf6491264ece188296"
+          },
+          {
+            "_id": "6419c5ee6491264ece188298",
+            "name": "10 x 12",
+            "price_multiplier": 1.4,
+            "id": "6419c5ee6491264ece188298"
+          }
+        ],
+        "createdAt": "2023-03-21T14:59:13.849Z",
+        "updatedAt": "2023-03-21T14:59:13.849Z",
+        "__v": 0,
+        "id": "6419c6416491264ece18829a"
+      },
+      "description": "Soft and moisty goodness packed with carrots, walnuts, and cream cheese.",
+      "img_name": "carrot.png",
+      "price": 600,
+      "createdAt": "2023-03-21T15:24:35.621Z",
+      "updatedAt": "2023-03-21T15:24:35.621Z",
+      "__v": 0,
+      "id": "6419cc33401b1fd81ca00540"
+    },
+    {
+      "_id": "6419cd90abb01a79daf4aee3",
+      "name": "Chocolate Fudge",
+      "category_id": {
+        "_id": "6419c4116491264ece18828d",
+        "name": "cake",
+        "id": "6419c4116491264ece18828d"
+      },
+      "variant_set_id": {
+        "_id": "6419c6416491264ece18829a",
+        "variants_id": [
+          {
+            "_id": "6419c57d6491264ece188294",
+            "name": "6 x 8",
+            "price_multiplier": 1,
+            "id": "6419c57d6491264ece188294"
+          },
+          {
+            "_id": "6419c5cf6491264ece188296",
+            "name": "8 x 10",
+            "price_multiplier": 1.2,
+            "id": "6419c5cf6491264ece188296"
+          },
+          {
+            "_id": "6419c5ee6491264ece188298",
+            "name": "10 x 12",
+            "price_multiplier": 1.4,
+            "id": "6419c5ee6491264ece188298"
+          }
+        ],
+        "createdAt": "2023-03-21T14:59:13.849Z",
+        "updatedAt": "2023-03-21T14:59:13.849Z",
+        "__v": 0,
+        "id": "6419c6416491264ece18829a"
+      },
+      "description": "Decadent fudge-filled chocolate topped with caramel frosting.",
+      "img_name": "chocofudge.png",
+      "price": 600,
+      "createdAt": "2023-03-21T15:30:24.999Z",
+      "updatedAt": "2023-03-21T15:30:24.999Z",
+      "__v": 0,
+      "id": "6419cd90abb01a79daf4aee3"
+    },
+    {
+      "_id": "6419cd98abb01a79daf4aee5",
+      "name": "Marble",
+      "category_id": {
+        "_id": "6419c4116491264ece18828d",
+        "name": "cake",
+        "id": "6419c4116491264ece18828d"
+      },
+      "variant_set_id": {
+        "_id": "6419c6416491264ece18829a",
+        "variants_id": [
+          {
+            "_id": "6419c57d6491264ece188294",
+            "name": "6 x 8",
+            "price_multiplier": 1,
+            "id": "6419c57d6491264ece188294"
+          },
+          {
+            "_id": "6419c5cf6491264ece188296",
+            "name": "8 x 10",
+            "price_multiplier": 1.2,
+            "id": "6419c5cf6491264ece188296"
+          },
+          {
+            "_id": "6419c5ee6491264ece188298",
+            "name": "10 x 12",
+            "price_multiplier": 1.4,
+            "id": "6419c5ee6491264ece188298"
+          }
+        ],
+        "createdAt": "2023-03-21T14:59:13.849Z",
+        "updatedAt": "2023-03-21T14:59:13.849Z",
+        "__v": 0,
+        "id": "6419c6416491264ece18829a"
+      },
+      "description": "Layers of vanilla and chocolate mixed in buttery bread.",
+      "img_name": "marble.png",
+      "price": 600,
+      "createdAt": "2023-03-21T15:30:32.586Z",
+      "updatedAt": "2023-03-21T15:30:32.586Z",
+      "__v": 0,
+      "id": "6419cd98abb01a79daf4aee5"
+    },
+    {
+      "_id": "6419cda2abb01a79daf4aee7",
+      "name": "Red Velvet",
+      "category_id": {
+        "_id": "6419c4116491264ece18828d",
+        "name": "cake",
+        "id": "6419c4116491264ece18828d"
+      },
+      "variant_set_id": {
+        "_id": "6419c6416491264ece18829a",
+        "variants_id": [
+          {
+            "_id": "6419c57d6491264ece188294",
+            "name": "6 x 8",
+            "price_multiplier": 1,
+            "id": "6419c57d6491264ece188294"
+          },
+          {
+            "_id": "6419c5cf6491264ece188296",
+            "name": "8 x 10",
+            "price_multiplier": 1.2,
+            "id": "6419c5cf6491264ece188296"
+          },
+          {
+            "_id": "6419c5ee6491264ece188298",
+            "name": "10 x 12",
+            "price_multiplier": 1.4,
+            "id": "6419c5ee6491264ece188298"
+          }
+        ],
+        "createdAt": "2023-03-21T14:59:13.849Z",
+        "updatedAt": "2023-03-21T14:59:13.849Z",
+        "__v": 0,
+        "id": "6419c6416491264ece18829a"
+      },
+      "description": "Our own take on the traditional velvet flavor—vanilla drenched in butter with a hint of cocoa flavor.",
+      "img_name": "redvelvet.png",
+      "price": 700,
+      "createdAt": "2023-03-21T15:30:42.299Z",
+      "updatedAt": "2023-03-21T15:30:42.299Z",
+      "__v": 0,
+      "id": "6419cda2abb01a79daf4aee7"
+    },
+    {
+      "_id": "6419cda8abb01a79daf4aee9",
+      "name": "Tiramisu",
+      "category_id": {
+        "_id": "6419c4116491264ece18828d",
+        "name": "cake",
+        "id": "6419c4116491264ece18828d"
+      },
+      "variant_set_id": {
+        "_id": "6419c6416491264ece18829a",
+        "variants_id": [
+          {
+            "_id": "6419c57d6491264ece188294",
+            "name": "6 x 8",
+            "price_multiplier": 1,
+            "id": "6419c57d6491264ece188294"
+          },
+          {
+            "_id": "6419c5cf6491264ece188296",
+            "name": "8 x 10",
+            "price_multiplier": 1.2,
+            "id": "6419c5cf6491264ece188296"
+          },
+          {
+            "_id": "6419c5ee6491264ece188298",
+            "name": "10 x 12",
+            "price_multiplier": 1.4,
+            "id": "6419c5ee6491264ece188298"
+          }
+        ],
+        "createdAt": "2023-03-21T14:59:13.849Z",
+        "updatedAt": "2023-03-21T14:59:13.849Z",
+        "__v": 0,
+        "id": "6419c6416491264ece18829a"
+      },
+      "description": "A fusion of espresso-dipped ladyfingers and a creamy, lightly sweetened mascarpone cream, making a bittersweet result of flavors.",
+      "img_name": "tiramisu.png",
+      "price": 700,
+      "createdAt": "2023-03-21T15:30:48.608Z",
+      "updatedAt": "2023-03-21T15:30:48.608Z",
+      "__v": 0,
+      "id": "6419cda8abb01a79daf4aee9"
+    },
+    {
+      "_id": "6419cdb1abb01a79daf4aeeb",
+      "name": "Ube",
+      "category_id": {
+        "_id": "6419c4116491264ece18828d",
+        "name": "cake",
+        "id": "6419c4116491264ece18828d"
+      },
+      "variant_set_id": {
+        "_id": "6419c6416491264ece18829a",
+        "variants_id": [
+          {
+            "_id": "6419c57d6491264ece188294",
+            "name": "6 x 8",
+            "price_multiplier": 1,
+            "id": "6419c57d6491264ece188294"
+          },
+          {
+            "_id": "6419c5cf6491264ece188296",
+            "name": "8 x 10",
+            "price_multiplier": 1.2,
+            "id": "6419c5cf6491264ece188296"
+          },
+          {
+            "_id": "6419c5ee6491264ece188298",
+            "name": "10 x 12",
+            "price_multiplier": 1.4,
+            "id": "6419c5ee6491264ece188298"
+          }
+        ],
+        "createdAt": "2023-03-21T14:59:13.849Z",
+        "updatedAt": "2023-03-21T14:59:13.849Z",
+        "__v": 0,
+        "id": "6419c6416491264ece18829a"
+      },
+      "description": "Moist, nutty, delectable ube goodness you all know and love.",
+      "img_name": "ube.png",
+      "price": 700,
+      "createdAt": "2023-03-21T15:30:57.371Z",
+      "updatedAt": "2023-03-21T15:30:57.371Z",
+      "__v": 0,
+      "id": "6419cdb1abb01a79daf4aeeb"
+    },
+    {
+      "_id": "6419cdd9abb01a79daf4aefd",
+      "name": "Chocolate Chip",
+      "category_id": {
+        "_id": "6419c41f6491264ece18828f",
+        "name": "cookie",
+        "id": "6419c41f6491264ece18828f"
+      },
+      "variant_set_id": {
+        "_id": "6419c8606491264ece1882a5",
+        "variants_id": [
+          {
+            "_id": "6419c8306491264ece18829f",
+            "name": "5 pcs",
+            "price_multiplier": 1,
+            "id": "6419c8306491264ece18829f"
+          },
+          {
+            "_id": "6419c8456491264ece1882a1",
+            "name": "10 pcs",
+            "price_multiplier": 1.8,
+            "id": "6419c8456491264ece1882a1"
+          },
+          {
+            "_id": "6419c8556491264ece1882a3",
+            "name": "20 pcs",
+            "price_multiplier": 2.8,
+            "id": "6419c8556491264ece1882a3"
+          }
+        ],
+        "createdAt": "2023-03-21T15:08:16.885Z",
+        "updatedAt": "2023-03-21T15:08:16.885Z",
+        "__v": 0,
+        "id": "6419c8606491264ece1882a5"
+      },
+      "description": "Our famous, traditional chocolate chip cookie.",
+      "img_name": "chocochip.png",
+      "price": 60,
+      "createdAt": "2023-03-21T15:31:37.472Z",
+      "updatedAt": "2023-03-21T15:31:37.472Z",
+      "__v": 0,
+      "id": "6419cdd9abb01a79daf4aefd"
+    },
+    {
+      "_id": "6419cde2abb01a79daf4aeff",
+      "name": "Chocolate Crinkles",
+      "category_id": {
+        "_id": "6419c41f6491264ece18828f",
+        "name": "cookie",
+        "id": "6419c41f6491264ece18828f"
+      },
+      "variant_set_id": {
+        "_id": "6419c8606491264ece1882a5",
+        "variants_id": [
+          {
+            "_id": "6419c8306491264ece18829f",
+            "name": "5 pcs",
+            "price_multiplier": 1,
+            "id": "6419c8306491264ece18829f"
+          },
+          {
+            "_id": "6419c8456491264ece1882a1",
+            "name": "10 pcs",
+            "price_multiplier": 1.8,
+            "id": "6419c8456491264ece1882a1"
+          },
+          {
+            "_id": "6419c8556491264ece1882a3",
+            "name": "20 pcs",
+            "price_multiplier": 2.8,
+            "id": "6419c8556491264ece1882a3"
+          }
+        ],
+        "createdAt": "2023-03-21T15:08:16.885Z",
+        "updatedAt": "2023-03-21T15:08:16.885Z",
+        "__v": 0,
+        "id": "6419c8606491264ece1882a5"
+      },
+      "description": "Brownie-like chocolate cookies coated in confectioners' sugar.",
+      "img_name": "chococringles.png",
+      "price": 50,
+      "createdAt": "2023-03-21T15:31:46.898Z",
+      "updatedAt": "2023-03-21T15:31:46.898Z",
+      "__v": 0,
+      "id": "6419cde2abb01a79daf4aeff"
+    },
+    {
+      "_id": "6419cdeaabb01a79daf4af01",
+      "name": "Gingerbread",
+      "category_id": {
+        "_id": "6419c41f6491264ece18828f",
+        "name": "cookie",
+        "id": "6419c41f6491264ece18828f"
+      },
+      "variant_set_id": {
+        "_id": "6419c8606491264ece1882a5",
+        "variants_id": [
+          {
+            "_id": "6419c8306491264ece18829f",
+            "name": "5 pcs",
+            "price_multiplier": 1,
+            "id": "6419c8306491264ece18829f"
+          },
+          {
+            "_id": "6419c8456491264ece1882a1",
+            "name": "10 pcs",
+            "price_multiplier": 1.8,
+            "id": "6419c8456491264ece1882a1"
+          },
+          {
+            "_id": "6419c8556491264ece1882a3",
+            "name": "20 pcs",
+            "price_multiplier": 2.8,
+            "id": "6419c8556491264ece1882a3"
+          }
+        ],
+        "createdAt": "2023-03-21T15:08:16.885Z",
+        "updatedAt": "2023-03-21T15:08:16.885Z",
+        "__v": 0,
+        "id": "6419c8606491264ece1882a5"
+      },
+      "description": "Molasses and brown sugar-sweetened holiday goodness that are crispy on the edges yet soft in the center.",
+      "img_name": "gingerbread.png",
+      "price": 80,
+      "createdAt": "2023-03-21T15:31:54.347Z",
+      "updatedAt": "2023-03-21T15:31:54.347Z",
+      "__v": 0,
+      "id": "6419cdeaabb01a79daf4af01"
+    },
+    {
+      "_id": "6419ce05abb01a79daf4af03",
+      "name": "Egg Tart",
+      "category_id": {
+        "_id": "6419c4256491264ece188291",
+        "name": "pastry",
+        "id": "6419c4256491264ece188291"
+      },
+      "variant_set_id": {
+        "_id": "6419c8b96491264ece1882ad",
+        "variants_id": [
+          {
+            "_id": "6419c88d6491264ece1882a7",
+            "name": "2 pcs",
+            "price_multiplier": 1,
+            "id": "6419c88d6491264ece1882a7"
+          },
+          {
+            "_id": "6419c89f6491264ece1882a9",
+            "name": "4 pcs",
+            "price_multiplier": 1.8,
+            "id": "6419c89f6491264ece1882a9"
+          },
+          {
+            "_id": "6419c8b26491264ece1882ab",
+            "name": "6 pcs",
+            "price_multiplier": 2.6,
+            "id": "6419c8b26491264ece1882ab"
+          }
+        ],
+        "createdAt": "2023-03-21T15:09:45.952Z",
+        "updatedAt": "2023-03-21T15:09:45.952Z",
+        "__v": 0,
+        "id": "6419c8b96491264ece1882ad"
+      },
+      "description": "Bright savory egg richness with a scorched caramelized exterior.",
+      "img_name": "eggtart.png",
+      "price": 60,
+      "createdAt": "2023-03-21T15:32:21.911Z",
+      "updatedAt": "2023-03-21T15:34:31.082Z",
+      "__v": 0,
+      "id": "6419ce05abb01a79daf4af03"
+    },
+    {
+      "_id": "6419ce0cabb01a79daf4af05",
+      "name": "Macarons",
+      "category_id": {
+        "_id": "6419c4256491264ece188291",
+        "name": "pastry",
+        "id": "6419c4256491264ece188291"
+      },
+      "variant_set_id": {
+        "_id": "6419c8606491264ece1882a5",
+        "variants_id": [
+          {
+            "_id": "6419c8306491264ece18829f",
+            "name": "5 pcs",
+            "price_multiplier": 1,
+            "id": "6419c8306491264ece18829f"
+          },
+          {
+            "_id": "6419c8456491264ece1882a1",
+            "name": "10 pcs",
+            "price_multiplier": 1.8,
+            "id": "6419c8456491264ece1882a1"
+          },
+          {
+            "_id": "6419c8556491264ece1882a3",
+            "name": "20 pcs",
+            "price_multiplier": 2.8,
+            "id": "6419c8556491264ece1882a3"
+          }
+        ],
+        "createdAt": "2023-03-21T15:08:16.885Z",
+        "updatedAt": "2023-03-21T15:08:16.885Z",
+        "__v": 0,
+        "id": "6419c8606491264ece1882a5"
+      },
+      "description": "Evocatively delicate nutty sandwich cookies with a crisp exterior.",
+      "img_name": "macaron.png",
+      "price": 50,
+      "createdAt": "2023-03-21T15:32:28.357Z",
+      "updatedAt": "2023-03-21T15:33:37.810Z",
+      "__v": 0,
+      "id": "6419ce0cabb01a79daf4af05"
+    },
+    {
+      "_id": "6419cea3abb01a79daf4af0d",
+      "name": "Soft Pretzel",
+      "category_id": {
+        "_id": "6419c4256491264ece188291",
+        "name": "pastry",
+        "id": "6419c4256491264ece188291"
+      },
+      "variant_set_id": {
+        "_id": "6419c8e96491264ece1882b5",
+        "variants_id": [
+          {
+            "_id": "6419c8c36491264ece1882af",
+            "name": "6 pcs",
+            "price_multiplier": 1,
+            "id": "6419c8c36491264ece1882af"
+          },
+          {
+            "_id": "6419c8d66491264ece1882b1",
+            "name": "12 pcs",
+            "price_multiplier": 1.8,
+            "id": "6419c8d66491264ece1882b1"
+          },
+          {
+            "_id": "6419c8e36491264ece1882b3",
+            "name": "20 pcs",
+            "price_multiplier": 2.8,
+            "id": "6419c8e36491264ece1882b3"
+          }
+        ],
+        "createdAt": "2023-03-21T15:10:33.151Z",
+        "updatedAt": "2023-03-21T15:10:33.151Z",
+        "__v": 0,
+        "id": "6419c8e96491264ece1882b5"
+      },
+      "description": "Traditional pretzels with a deeply browned exterior and a chewy texture.",
+      "img_name": "pretzel.png",
+      "price": 50,
+      "createdAt": "2023-03-21T15:34:59.848Z",
+      "updatedAt": "2023-03-21T15:34:59.848Z",
+      "__v": 0,
+      "id": "6419cea3abb01a79daf4af0d"
+    }
+  ]
+}
