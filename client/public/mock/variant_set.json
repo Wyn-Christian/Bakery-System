@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "variants": [1, 2, 3]
+    "variants_id": [1, 2, 3]
   },
   {
     "id": 2,
-    "variants": [4, 5, 6]
+    "variants_id": [4, 5, 6]
   },
   {
     "id": 3,
-    "variants": [7, 8, 9]
+    "variants_id": [7, 8, 9]
   },
   {
     "id": 4,
-    "variants": [10, 11, 12]
+    "variants_id": [10, 11, 12]
   }
 ]
